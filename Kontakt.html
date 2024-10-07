@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="Responsiv.css">
+</head>
+
+<body>
+    <header>
+        <h1>Kontakt</h1>
+        <nav>
+        <ul class="navigation">
+        <li><a href="Responsiv.html">Home</a></li>
+        <li><a href="blog.html">Blogartikel</a></li>
+        <li><a href="ueber-mich.html">Über Mich</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Kontakt</h1>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
+            invidunt ut labore et dolore magna aliquyam erat.</p>
+
+        <h2>Kontaktformular</h2>
+
+        <form action="submit_form.php" method="POST" class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Nachricht:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Absenden</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>© Anne Fritzenwanker 2024</p>
+        <p>
+            <a href="impressum.html">Impressum</a> |
+            <a href="datenschutz.html">Datenschutz</a>
+        </p>
+    </footer>
+</body>
+</html>
