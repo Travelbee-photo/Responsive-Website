@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Kontakt</h1>
+        <nav>
+            <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blogartikel</a></li>
+            <li><a href="ueber-mich.html">Über Mich</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 style="text-align: center;">Kontaktiere mich hier</h2>
+        <p>Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle Buchstaben da sind und wie sie aussehen. 
+            Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften zu testen. 
+            Manchmal Sätze, die alle Buchstaben des Alphabets enthalten - man nennt diese Sätze »Pangrams«.</p>
+
+        <h2 style="text-align: center;">Kontaktformular</h2>
+
+        <form action="submit_form.php" method="POST" class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="message">Nachricht:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+    
+        <button type="submit">Absenden</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>© Anne Fritzenwanker 2024</p>
+        <p>
+            <a href="impressum.html">Impressum</a> |
+            <a href="datenschutz.html">Datenschutz</a>
+        </p>
+    </footer>
+</body>
+</html>
