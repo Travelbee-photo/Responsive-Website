@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: blanchedalmond;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: black;
+    color: white;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: black;
+    color: white;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: black;
+}
+.grid-container {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px;
+    gap: 20px;
+}
+
+.spalte {
+    flex: 1; 
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+ 
+}
+
+.spalte img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+
+.spalte h2 {
+    color: black;
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        flex-direction: column;
+        gap: 15px; 
+    }
+
+    header, footer {
+        padding: 20px;
+    }
+    
+    main {
+        padding: 15px;
+    }
+}
+
+nav {
+    background-color: #333; 
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px; 
+}
+
+nav ul li:last-child {
+    margin-right: 0; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; 
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: blanchedalmond; 
+}
+
+footer p a {
+    color: white; 
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer p a:hover {
+    text-decoration: underline; 
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 20px 0; /* Entferne das "auto" für die linke Ausrichtung */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling für die Überschrift des Kontaktformulars */
+main h2 {
+    margin-top: 40px;
+    font-size: 24px;
+    text-align: left;
+    color: black;
+}
+
+/* Standard-Ausrichtung: links */
+@media (min-width: 600px) {
+    .contact-form {
+        margin-left: 0; /* Linksbündige Ausrichtung */
+    }
+}
+
+/* Ab einer Breite von 1200px soll das Formular zentriert sein */
+@media (min-width: 1200px) {
+    .contact-form {
+        margin: 20px auto; /* Zentrierung */
+    }
+}
+
+/* Formularfeld-Styling bleibt gleich */
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #575757;
+}
